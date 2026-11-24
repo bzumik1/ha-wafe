@@ -6,6 +6,8 @@ This repository is the preview of the WAFE integration that is being contributed
 
 The device communication lives in the [`wafe-modbus`](https://github.com/bzumik1/wafe-modbus) library.
 
+WAFE s.r.o., the manufacturer, has been in bankruptcy since December 2023 (Regional Court in Brno, case KSBR 30 INS 19175/2023). This project talks to the units locally and does not depend on the manufacturer or its cloud.
+
 ## Requirements
 
 - Home Assistant 2026.11 or newer.
