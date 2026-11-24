@@ -21,7 +21,7 @@
     "wafe_modbus"
   ],
   "requirements": [
-    "wafe-modbus @ https://github.com/bzumik1/wafe-modbus/archive/0967fc6e81b220c0dee51a674c67057cd03f1aae.zip"
+    "wafe-modbus @ https://github.com/bzumik1/wafe-modbus/archive/157e6151d1ee2c5f9b4d78306535593aabe9e7c0.zip"
   ],
   "version": "0.1.0"
 }

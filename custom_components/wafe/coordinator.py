@@ -1,5 +1,6 @@
 """Data update coordinator for WAFE heat recovery units."""
 
+from datetime import timedelta
 import logging
 from typing import TYPE_CHECKING, override
 
@@ -16,9 +17,13 @@ try:
 except ImportError:
     UpdateFailedUnreachable = UpdateFailed
 
-from .const import DOMAIN, MANUFACTURER, SCAN_INTERVAL
+from .const import DOMAIN, MANUFACTURER
 
 _LOGGER = logging.getLogger(__name__)
+
+# The manual airflow sits among the settings and is changed in the vendor app, so
+# everything is polled at the same pace: three requests on the local network.
+SCAN_INTERVAL = timedelta(seconds=5)
 
 type WafeConfigEntry = ConfigEntry[WafeDataUpdateCoordinator]
 

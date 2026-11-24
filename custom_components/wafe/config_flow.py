@@ -18,7 +18,9 @@ from homeassistant.helpers.selector import (
     TextSelector,
 )
 
-from .const import DEFAULT_PORT, DOMAIN, MANUFACTURER, UNIT_ID
+from .const import DOMAIN, MANUFACTURER, UNIT_ID
+
+DEFAULT_PORT = 502
 
 STEP_USER_DATA_SCHEMA = probatio.Schema(
     {
