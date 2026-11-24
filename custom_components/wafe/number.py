@@ -136,7 +136,6 @@ NUMBER_DESCRIPTIONS: tuple[WafeNumberEntityDescription, ...] = (
         native_max_value=2000,
         native_step=10,
         mode=NumberMode.BOX,
-        entity_category=EntityCategory.CONFIG,
     ),
     _airflow("min_airflow"),
     _airflow("max_airflow"),
