@@ -21,7 +21,7 @@
     "wafe_modbus"
   ],
   "requirements": [
-    "wafe-modbus==0.1.0"
+    "wafe-modbus==0.1.1"
   ],
   "version": "0.1.0"
 }
