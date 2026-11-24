@@ -1,0 +1,184 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Zařízení je již nastaveno",
+            "no_unit_id": "Jednotka nenahlásila své ID, takže ji Home Assistant nedokáže odlišit od jiných jednotek.",
+            "unique_id_mismatch": "Na této adrese je jiná jednotka. Změňte nastavení jednotky, kterou jste původně přidali."
+        },
+        "error": {
+            "cannot_connect": "Na této adrese neodpověděla žádná jednotka WAFE. Zkontrolujte IP adresu a ověřte, že k jednotce není připojen jiný Modbus klient, protože obslouží jen jednoho najednou."
+        },
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Hostitel",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "IP adresa nebo název jednotky ve vaší síti. Nastavte jí v routeru pevnou adresu.",
+                    "port": "Modbus TCP port jednotky. Výchozí je 502."
+                },
+                "description": "Změňte, kde je jednotka dostupná, například když dostala novou IP adresu."
+            },
+            "user": {
+                "data": {
+                    "host": "Hostitel",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "IP adresa nebo název jednotky ve vaší síti. Nastavte jí v routeru pevnou adresu.",
+                    "port": "Modbus TCP port jednotky. Výchozí je 502."
+                },
+                "description": "Připojte rekuperační jednotku WAFE přes Modbus TCP. Jednotka musí být připojená do sítě ethernetovým kabelem."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "bypass": {
+                "name": "Bypass"
+            },
+            "holiday_ventilation": {
+                "name": "Prázdninové větrání"
+            }
+        },
+        "button": {
+            "long_boost": {
+                "name": "Dlouhý boost"
+            }
+        },
+        "number": {
+            "bypass_airflow": {
+                "name": "Průtok bypassu"
+            },
+            "bypass_end_month": {
+                "name": "Konečný měsíc bypassu"
+            },
+            "bypass_min_temperature_difference": {
+                "name": "Minimální rozdíl teplot bypassu"
+            },
+            "bypass_start_month": {
+                "name": "Začáteční měsíc bypassu"
+            },
+            "co2_setpoint": {
+                "name": "Požadovaná hodnota CO2"
+            },
+            "fan_imbalance": {
+                "name": "Disbalance ventilátorů"
+            },
+            "limited_max_airflow": {
+                "name": "Omezený maximální průtok vzduchu"
+            },
+            "long_boost_duration": {
+                "name": "Délka dlouhého boostu"
+            },
+            "manual_airflow": {
+                "name": "Manuální průtok vzduchu"
+            },
+            "max_airflow": {
+                "name": "Maximální průtok vzduchu"
+            },
+            "min_airflow": {
+                "name": "Minimální průtok vzduchu"
+            },
+            "night_bypass_min_temperature_difference": {
+                "name": "Minimální rozdíl teplot nočního bypassu"
+            },
+            "preheat_start_temperature": {
+                "name": "Teplota sepnutí předehřevu"
+            },
+            "short_boost_duration": {
+                "name": "Délka krátkého boostu"
+            }
+        },
+        "select": {
+            "operating_mode": {
+                "name": "Provozní režim",
+                "state": {
+                    "intelligent": "Inteligentní",
+                    "manual": "Manuální",
+                    "scheduler": "Týdenní plán",
+                    "ultra_saving": "Ultra úsporný"
+                }
+            }
+        },
+        "sensor": {
+            "exhaust_temperature": {
+                "name": "Teplota odpadního vzduchu"
+            },
+            "extract_temperature": {
+                "name": "Teplota odtahovaného vzduchu"
+            },
+            "fan_1_speed": {
+                "name": "Otáčky ventilátoru 1"
+            },
+            "fan_2_speed": {
+                "name": "Otáčky ventilátoru 2"
+            },
+            "outdoor_temperature": {
+                "name": "Teplota venkovního vzduchu"
+            },
+            "state": {
+                "name": "Stav",
+                "state": {
+                    "holiday": "Prázdniny",
+                    "manual": "Manuální",
+                    "standby": "Spánek",
+                    "ventilation": "Větrání"
+                }
+            },
+            "supply_temperature": {
+                "name": "Teplota čerstvého vzduchu"
+            },
+            "target_airflow": {
+                "name": "Cílový průtok vzduchu"
+            }
+        },
+        "switch": {
+            "airflow_limit": {
+                "name": "Omezení průtoku vzduchu"
+            },
+            "block_bypass": {
+                "name": "Zakázat bypass"
+            },
+            "boost": {
+                "name": "Boost"
+            },
+            "bypass_by_co2": {
+                "name": "Průtok bypassu podle CO2"
+            },
+            "fireplace": {
+                "name": "Krbový režim"
+            },
+            "holiday": {
+                "name": "Prázdninový režim"
+            },
+            "silent": {
+                "name": "Tichý režim"
+            },
+            "standby": {
+                "name": "Spánek"
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_value": {
+            "message": "Jednotka tuto hodnotu nepřijímá."
+        },
+        "modbus_error": {
+            "message": "Chyba při komunikaci s jednotkou."
+        },
+        "no_component_answered": {
+            "message": "Jednotka neodpověděla na žádné čtení."
+        },
+        "unit_unreachable": {
+            "message": "Jednotka není dostupná."
+        },
+        "write_failed": {
+            "message": "Jednotka změnu odmítla."
+        },
+        "wrong_unit": {
+            "message": "Na nastavené adrese odpovídá jiná jednotka WAFE. Změňte nastavení integrace na adresu jednotky, kterou jste přidali."
+        }
+    }
+}
