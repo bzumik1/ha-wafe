@@ -1,0 +1,184 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "no_unit_id": "The unit did not report its ID, so Home Assistant cannot tell it apart from other units.",
+            "unique_id_mismatch": "The unit at this address is a different unit. Reconfigure the unit you originally set up."
+        },
+        "error": {
+            "cannot_connect": "No WAFE unit answered at this address. Check the IP address and that no other Modbus client is connected to the unit, because it serves only one at a time."
+        },
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "The IP address or hostname of the unit on your network. Give it a fixed address in your router.",
+                    "port": "The Modbus TCP port of the unit. The default is 502."
+                },
+                "description": "Update where this unit is reached, for example after it got a new IP address."
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "The IP address or hostname of the unit on your network. Give it a fixed address in your router.",
+                    "port": "The Modbus TCP port of the unit. The default is 502."
+                },
+                "description": "Connect to a WAFE heat recovery unit over Modbus TCP. The unit must be connected to your network with an Ethernet cable."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "bypass": {
+                "name": "Bypass"
+            },
+            "holiday_ventilation": {
+                "name": "Holiday ventilation"
+            }
+        },
+        "button": {
+            "long_boost": {
+                "name": "Long boost"
+            }
+        },
+        "number": {
+            "bypass_airflow": {
+                "name": "Bypass airflow"
+            },
+            "bypass_end_month": {
+                "name": "Bypass end month"
+            },
+            "bypass_min_temperature_difference": {
+                "name": "Bypass minimum temperature difference"
+            },
+            "bypass_start_month": {
+                "name": "Bypass start month"
+            },
+            "co2_setpoint": {
+                "name": "CO2 setpoint"
+            },
+            "fan_imbalance": {
+                "name": "Fan imbalance"
+            },
+            "limited_max_airflow": {
+                "name": "Limited maximum airflow"
+            },
+            "long_boost_duration": {
+                "name": "Long boost duration"
+            },
+            "manual_airflow": {
+                "name": "Manual airflow"
+            },
+            "max_airflow": {
+                "name": "Maximum airflow"
+            },
+            "min_airflow": {
+                "name": "Minimum airflow"
+            },
+            "night_bypass_min_temperature_difference": {
+                "name": "Night bypass minimum temperature difference"
+            },
+            "preheat_start_temperature": {
+                "name": "Preheater start temperature"
+            },
+            "short_boost_duration": {
+                "name": "Short boost duration"
+            }
+        },
+        "select": {
+            "operating_mode": {
+                "name": "Operating mode",
+                "state": {
+                    "intelligent": "Intelligent",
+                    "manual": "Manual",
+                    "scheduler": "Scheduler",
+                    "ultra_saving": "Ultra-saving"
+                }
+            }
+        },
+        "sensor": {
+            "exhaust_temperature": {
+                "name": "Exhaust temperature"
+            },
+            "extract_temperature": {
+                "name": "Extract temperature"
+            },
+            "fan_1_speed": {
+                "name": "Fan 1 speed"
+            },
+            "fan_2_speed": {
+                "name": "Fan 2 speed"
+            },
+            "outdoor_temperature": {
+                "name": "Outdoor temperature"
+            },
+            "state": {
+                "name": "State",
+                "state": {
+                    "holiday": "Holiday",
+                    "manual": "Manual",
+                    "standby": "Standby",
+                    "ventilation": "Ventilation"
+                }
+            },
+            "supply_temperature": {
+                "name": "Supply temperature"
+            },
+            "target_airflow": {
+                "name": "Target airflow"
+            }
+        },
+        "switch": {
+            "airflow_limit": {
+                "name": "Airflow limit"
+            },
+            "block_bypass": {
+                "name": "Block bypass"
+            },
+            "boost": {
+                "name": "Boost"
+            },
+            "bypass_by_co2": {
+                "name": "Bypass airflow by CO2"
+            },
+            "fireplace": {
+                "name": "Fireplace mode"
+            },
+            "holiday": {
+                "name": "Holiday mode"
+            },
+            "silent": {
+                "name": "Silent mode"
+            },
+            "standby": {
+                "name": "Standby"
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_value": {
+            "message": "The unit does not accept this value."
+        },
+        "modbus_error": {
+            "message": "Error communicating with the unit."
+        },
+        "no_component_answered": {
+            "message": "The unit did not answer any read."
+        },
+        "unit_unreachable": {
+            "message": "The unit cannot be reached."
+        },
+        "write_failed": {
+            "message": "The unit rejected the change."
+        },
+        "wrong_unit": {
+            "message": "A different WAFE unit answers at the configured address. Reconfigure the integration with the address of the unit you set up."
+        }
+    }
+}

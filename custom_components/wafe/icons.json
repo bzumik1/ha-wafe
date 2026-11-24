@@ -1,0 +1,98 @@
+{
+  "entity": {
+    "button": {
+      "long_boost": {
+        "default": "mdi:fan-clock"
+      }
+    },
+    "number": {
+      "bypass_airflow": {
+        "default": "mdi:weather-windy"
+      },
+      "bypass_end_month": {
+        "default": "mdi:calendar-end"
+      },
+      "bypass_min_temperature_difference": {
+        "default": "mdi:thermometer-lines"
+      },
+      "bypass_start_month": {
+        "default": "mdi:calendar-start"
+      },
+      "fan_imbalance": {
+        "default": "mdi:scale-unbalanced"
+      },
+      "limited_max_airflow": {
+        "default": "mdi:fan-chevron-down"
+      },
+      "long_boost_duration": {
+        "default": "mdi:timer-outline"
+      },
+      "manual_airflow": {
+        "default": "mdi:fan"
+      },
+      "max_airflow": {
+        "default": "mdi:fan-chevron-up"
+      },
+      "min_airflow": {
+        "default": "mdi:fan-chevron-down"
+      },
+      "night_bypass_min_temperature_difference": {
+        "default": "mdi:thermometer-lines"
+      },
+      "short_boost_duration": {
+        "default": "mdi:timer-outline"
+      }
+    },
+    "select": {
+      "operating_mode": {
+        "default": "mdi:hvac",
+        "state": {
+          "intelligent": "mdi:molecule-co2",
+          "manual": "mdi:hand-back-right",
+          "scheduler": "mdi:calendar-clock",
+          "ultra_saving": "mdi:leaf"
+        }
+      }
+    },
+    "sensor": {
+      "fan_1_speed": {
+        "default": "mdi:fan"
+      },
+      "fan_2_speed": {
+        "default": "mdi:fan"
+      },
+      "state": {
+        "default": "mdi:air-filter"
+      },
+      "target_airflow": {
+        "default": "mdi:fan"
+      }
+    },
+    "switch": {
+      "airflow_limit": {
+        "default": "mdi:fan-chevron-down"
+      },
+      "block_bypass": {
+        "default": "mdi:valve-closed"
+      },
+      "boost": {
+        "default": "mdi:fan-plus"
+      },
+      "bypass_by_co2": {
+        "default": "mdi:molecule-co2"
+      },
+      "fireplace": {
+        "default": "mdi:fireplace"
+      },
+      "holiday": {
+        "default": "mdi:beach"
+      },
+      "silent": {
+        "default": "mdi:volume-off"
+      },
+      "standby": {
+        "default": "mdi:power-sleep"
+      }
+    }
+  }
+}

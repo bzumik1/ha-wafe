@@ -1,0 +1,27 @@
+{
+  "domain": "wafe",
+  "name": "WAFE",
+  "codeowners": [
+    "@bzumik1"
+  ],
+  "config_flow": true,
+  "connectivity": [
+    "modbus"
+  ],
+  "dependencies": [
+    "modbus"
+  ],
+  "documentation": "https://github.com/bzumik1/ha-wafe",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/bzumik1/ha-wafe/issues",
+  "loggers": [
+    "modbus_connection",
+    "tmodbus",
+    "wafe_modbus"
+  ],
+  "requirements": [
+    "wafe-modbus @ https://github.com/bzumik1/wafe-modbus/archive/0967fc6e81b220c0dee51a674c67057cd03f1aae.zip"
+  ],
+  "version": "0.1.0"
+}
